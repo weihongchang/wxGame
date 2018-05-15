@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MainUISkin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:game="game.*" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image id="mainBG" width="100%" height="100%" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" source="module_bg_png"/>
+	<e:Group id="group_over" width="100%" height="100%" x="0" y="0" visible="false">
+		<e:Image id="btn_new" width="90" height="65" verticalCenter="0" source="chongxinkaishi_png" x="165"/>
+		<e:Image id="btn_home" width="90" height="65" verticalCenter="0" source="fanhuizhuye_png" x="333"/>
+		<e:Button id="mainBtn" label="按钮" skinName="main.MainBtnSkin" width="80" height="80" x="529" y="244" scaleX="1" scaleY="1" visible="false"/>
+	</e:Group>
+	<e:Group id="group_game" width="100%" height="100%" x="0" y="0">
+		<e:Image id="boxTop" width="326" height="113" source="bar2-sheet1_png" y="185" scaleX="1" scaleY="1" x="197"/>
+		<e:Image id="boxBottom" width="326" height="113" source="bar2-sheet1_png" y="952" scaleX="1" scaleY="1" x="197"/>
+		<e:Image id="cube" width="80" height="80" y="617" scaleX="1" scaleY="1" anchorOffsetY="40" rotation="0" source="p2-sheet1_png" anchorOffsetX="40" x="360"/>
+		<e:Image width="20" height="20" x="342" y="625" scaleX="1" scaleY="1"/>
+		<e:Image id="starTop" width="60" height="60" y="303" source="xingxing_png" x="330" visible="false"/>
+		<e:Image id="starBottom" width="60" height="60" y="889" source="xingxing_png" x="330"/>
+		<e:Image width="60" height="60" source="xingxing_png" x="80" y="57"/>
+		<e:Label id="lable_starNum" text="1000" x="156" y="67" height="50" width="159" textAlign="left" verticalAlign="middle" textColor="0xed9f2a" fontFamily="Times" size="45"/>
+	</e:Group>
+</e:Skin>

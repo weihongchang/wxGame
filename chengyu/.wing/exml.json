@@ -1,0 +1,45 @@
+{
+    "1624738d194": {
+        "path": "core\\view\\scene\\BattleScene.ts",
+        "class": "BattleScene",
+        "parentPath": ""
+    },
+    "global": {
+        "globalAutoLayerMarkEnable": false
+    },
+    "1626c0be082": {
+        "path": "core\\view\\panel\\ui\\BattleFinishPanel.ts",
+        "class": "BattleFinishPanel",
+        "parentPath": ""
+    },
+    "162a4ae3686": {
+        "path": "..\\resource\\eui_skins\\Item_HeroList.ts",
+        "class": "Item_HeroList",
+        "parentPath": ""
+    },
+    "162a8fe9311": {
+        "path": "..\\resource\\eui_skins\\Item_ItemList.ts",
+        "class": "Item_ItemList",
+        "parentPath": ""
+    },
+    "162ae9a5b0f": {
+        "path": "..\\resource\\eui_skins\\Item_DungeonList.ts",
+        "class": "Item_DungeonList",
+        "parentPath": ""
+    },
+    "162bcdb5a17": {
+        "path": "..\\resource\\eui_skins\\Item_Hero.ts",
+        "class": "Item_Hero",
+        "parentPath": ""
+    },
+    "162bceec278": {
+        "path": "..\\resource\\eui_skins\\Item_Hero.ts",
+        "class": "Item_Hero",
+        "parentPath": ""
+    },
+    "162cddd4562": {
+        "path": "..\\resource\\eui_skins\\Item_HeroHeadList.ts",
+        "class": "Item_HeroHeadList",
+        "parentPath": "resource/eui_skins/ItemRendererSkin.exml"
+    }
+}

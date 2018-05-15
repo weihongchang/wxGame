@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panel_QianghuaSkin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:game="game.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupMap" width="720" height="1440" x="0" y="-160">
+		<e:Image id="imgBG" width="720" height="1440" x="0" y="0" scaleX="1" scaleY="1" source="dungeonMap1_jpg"/>
+	</e:Group>
+	<e:Button id="closeBtn" label="按钮" x="608" y="0" skinName="main.CloseBtnSkin" scaleX="1" scaleY="1"/>
+</e:Skin>
+
+

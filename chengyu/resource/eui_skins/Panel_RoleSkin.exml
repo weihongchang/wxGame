@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Panle_RoleSkin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:game="game.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="720" height="1110" anchorOffsetY="0" source="mainuibg_png"/>
+	<e:Image width="720" height="1110" x="0" y="0" source="gray_png"/>
+	<e:Scroller id="scroller" width="720" height="600" x="0" y="257" throwSpeed="0">
+		<e:Group>
+		</e:Group>
+	</e:Scroller>
+	<e:Image id="img_item_right_ring" width="90" height="93" x="606" y="484" source="ring_png"/>
+	<e:Image width="90" height="90" x="606" y="484" source="item_1101016_png"/>
+	<e:Image id="img_item_left_ring" width="90" height="93" x="606" y="723" source="ring_png"/>
+	<e:Image id="img_item_weapon" width="90" height="93" x="40" y="723" source="weapon_png"/>
+	<e:Image id="img_item_armor" width="90" height="93" x="40" y="484" source="armor_png"/>
+	<e:Image id="img_item_necklace" width="90" height="93" x="606" y="245" source="necklace_png"/>
+	<e:Image id="img_item_helmet" width="90" height="93" x="40" y="245" source="helmet_png"/>
+	<e:Group id="group_heroInfo" width="720" height="259" x="0" y="859">
+		<e:Image width="720" height="257" x="0" y="0" source="tableBg_png" scaleX="1" scaleY="1"/>
+		<e:Image width="350" height="156" x="6" y="77.00000000000011" source="cell9s_png" scaleX="1" scaleY="1"/>
+		<e:Image width="350" height="156" x="365" y="77.00000000000011" source="cell9s_png" scaleX="1" scaleY="1"/>
+		<e:Image width="232" height="20" x="70" y="109.00000000000011" source="line2_png" scaleX="1" scaleY="1"/>
+		<e:Label text="羁绊" x="149" y="105.00000000000011" bold="true" width="74" scaleX="1" scaleY="1" textColor="0x282213"/>
+		<e:Image width="266" height="37" x="408" y="91.00000000000011" source="input_bg_png" scaleX="1" scaleY="1"/>
+		<e:Label text="资质:" x="421" y="99" bold="true" size="26"/>
+		<e:Label id="label_zizhi" text="1000" x="514" y="99" bold="true" size="26" width="107"/>
+		<e:Label text="生命:" x="414" y="142" bold="true" size="26" width="68" textColor="0xf48155"/>
+		<e:Label id="label_hp" text="1000" x="479" y="142" bold="true" size="26" width="77" textColor="0x070000"/>
+		<e:Label text="攻击:" x="557" y="142" bold="true" size="26" width="68" textColor="0xf48155"/>
+		<e:Label id="label_atk" text="1000" x="626" y="142" bold="true" size="26" width="77" textColor="0x070000"/>
+		<e:Label text="物防:" x="414" y="187" bold="true" size="26" width="68" textColor="0xf48155"/>
+		<e:Label id="label_def_atk" text="1000" x="479" y="187" bold="true" size="26" width="77" textColor="0x070000"/>
+		<e:Label text="法防:" x="557" y="187" bold="true" size="26" width="68" textColor="0xf48155"/>
+		<e:Label id="label_jiban1" text="羁绊1" x="60.36" y="142" bold="true" size="26" width="120" textColor="0xF48155"/>
+		<e:Label id="label_jiban2" text="羁绊2" x="203.36" y="142" bold="true" size="26" width="120" textColor="0xF48155"/>
+		<e:Label id="label_jiban3" text="羁绊3" x="60.36" y="187" bold="true" size="26" width="120" textColor="0xF48155"/>
+		<e:Label id="label_jiban4" text="羁绊4" x="203.36" y="187" bold="true" size="26" width="120" textColor="0xF48155"/>
+		<e:Label id="label_def_magic" text="1000" x="626" y="187" bold="true" size="26" width="77" textColor="0x070000"/>
+	</e:Group>
+	<e:Group id="group_top" width="720" height="205" x="0" y="0">
+		<e:Image width="720" height="20" x="0" y="205" source="top_cutline_png" scaleY="-1"/>
+		<e:Image width="720" height="20" x="0" y="0" source="top_cutline_png" scaleY="1"/>
+		<e:Image id="img_leftBtn" width="80" height="110" x="90" y="45" source="right_dr_png" scaleX="-1"/>
+		<e:Image id="img_rightBtn" width="80" height="110" x="632" y="45" source="right_dr_png" scaleX="1"/>
+		<e:Scroller id="scroller_head" width="506" height="115" x="111" y="50">
+			<e:Group width="100%" height="100%">
+			</e:Group>
+		</e:Scroller>
+	</e:Group>
+	<e:Button id="closeBtn" label="按钮" x="608" y="6" skinName="main.CloseBtnSkin"/>
+</e:Skin>
+
+

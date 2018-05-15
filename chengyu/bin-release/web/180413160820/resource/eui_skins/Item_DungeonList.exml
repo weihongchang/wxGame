@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Item_DungeonListSkin" width="720" height="195" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="162ae9a5b0f" ></w:Config>
+	<e:Image id="imgHead" width="640" height="143" x="9" y="26" fillMode="scale" source="dungeon1_jpg"/>
+	<e:Image width="720" height="189" x="0" y="3" fillMode="scale" anchorOffsetX="0" scale9Grid="573,3,21,1" source="dungeonframe_png" touchEnabled="false"/>
+	<e:Image width="123" height="33" x="50" y="43" source="name_dungeon1_png" fillMode="scale" touchEnabled="false"/>
+</e:Skin>

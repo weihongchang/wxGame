@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Item_HeroListSkin" width="720" height="157" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="162a4ae3686" ></w:Config>
+	<e:Image width="720" height="157" x="0" y="0" fillMode="clip" anchorOffsetX="0" source="bg_attr_png" scale9Grid="573,3,21,1"/>
+	<e:Image id="imgHeadBG" width="85" height="85" x="18" y="52.5" fillMode="scale" source="icon_normal_2_png"/>
+	<e:Image id="imgHead" width="80" height="80" x="20" y="54.5" source="head_bianshi_png" fillMode="scale"/>
+	<e:Label id="label_level" text="999" x="89.5" y="22" size="22" bold="true" verticalAlign="bottom" textAlign="left" anchorOffsetY="0" height="22" anchorOffsetX="0" width="42.5"/>
+	<e:Label id="label_Name" text="吃人了吧你" x="140" y="22" size="22" bold="true" verticalAlign="bottom" textAlign="left" anchorOffsetY="0" height="22" anchorOffsetX="0" width="137.5"/>
+	<e:Label id="label_Name0" text="资质:" x="110.75" y="87" size="17" bold="true" verticalAlign="bottom" textAlign="left" anchorOffsetY="0" height="22" anchorOffsetX="0" width="57" textColor="0x050000"/>
+	<e:Label id="label_zizhi" text="10001" x="167.75" y="87" size="17" bold="true" verticalAlign="bottom" textAlign="left" anchorOffsetY="0" height="22" anchorOffsetX="0" width="97" textColor="0x050000"/>
+	<e:Image id="img_shangzhen" width="94" height="96" x="612.5" y="13" source="being_fronted_png" fillMode="scale" anchorOffsetX="0" anchorOffsetY="0"/>
+</e:Skin>

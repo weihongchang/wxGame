@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BattleSceneSkin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="1624738d194" ></w:Config>
+	<e:Image id="sceneBg" width="720" height="1280" x="0" y="0" source="homeBg2_jpg"/>
+	<e:Image id="heroBg1" width="90" height="90" x="70" y="800" source="follower_normal_1_png" scaleX="1" anchorOffsetX="0" name="heroBg1"/>
+	<e:Image id="heroBg2" width="90" height="90" x="310" y="800" source="follower_normal_1_png" name="heroBg2"/>
+	<e:Image id="heroBg3" width="90" height="90" x="560" y="800" source="follower_normal_1_png" name="heroBg3"/>
+	<e:Image id="heroBg4" width="90" height="90" x="70" y="1000" source="follower_normal_1_png" name="heroBg4"/>
+	<e:Image id="heroBg5" width="90" height="90" x="317" y="1000" source="follower_normal_1_png" name="heroBg5"/>
+	<e:Image id="heroBg6" width="90" height="90" x="560" y="1000" source="follower_normal_1_png" name="heroBg6"/>
+	<e:Image id="monsterBg4" width="90" height="90" x="79.13" y="180" source="follower_normal_1_png" name="monsterBg4"/>
+	<e:Image id="monsterBg5" width="90" height="90" x="310" y="180" source="follower_normal_1_png" name="monsterBg5"/>
+	<e:Image id="monsterBg6" width="90" height="90" x="560" y="180" source="follower_normal_1_png" name="monsterBg6"/>
+	<e:Image id="monsterBg1" width="90" height="90" x="79.13" y="380" source="follower_normal_1_png" name="monsterBg1"/>
+	<e:Image id="monsterBg2" width="90" height="90" x="310" y="380" source="follower_normal_1_png" name="monsterBg2"/>
+	<e:Image id="monsterBg3" width="90" height="90" x="560" y="380" source="follower_normal_1_png" name="monsterBg3"/>
+</e:Skin>

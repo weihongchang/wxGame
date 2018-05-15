@@ -1,0 +1,51 @@
+
+option java_package = "ServerMessage";
+option java_outer_classname = "MsgTest";
+
+// ------------- 该文件只存放请求和响应 ----------
+/*
+ * 1.每个消息上一行用 // messageId:*** 表示其协议号
+ * 示例：
+ * 		// 登录请求
+ * 		// messageId:101
+ * 		MsgTest LoginReq {
+ * 		}
+ * 注：messageId那一行必须与消息紧邻(服务端自动生成需要)
+ *
+ * 2.消息中用到ID，如无特殊说明，通常指其UID(由服务端分配的唯一ID)
+ *   templateId,tid 都是指其模版ID (策划填写的excel表中的ID)
+ *   如 itemId 是物品的唯一ID; itemTemplateId、itemTid 指物品的模版ID
+ *
+ * 标记：
+ * 1. Deprecated 过时的消息(等待删除)
+ * 2. Modify 需要修改的消息
+ */
+
+// ------------------------------
+// 协议号上行为奇数，下行为偶数，并且成对出现
+// 例如：LoginReq->101 LoginResp->102
+//       如果只有一个请求或响应，则另一个成对的号空着
+//       BattleReadyReq->301 没有BattleReadyResp，那么302空着
+// 协议号分段说明:(每增加新模块就要在下方更新)
+
+// 登录请求
+// messageId:101
+//template
+message user_login{
+	required string email = 1;
+	optional string password = 2;
+	optional string sessionKey = 3;
+}
+
+// 登录响应
+// messageId:102
+message LoginResp {
+	required int32 status = 1;
+	optional string des = 2;
+}
+
+// 测试
+// messageId:103
+message LoginTest {
+	required int32 status = 1;
+}

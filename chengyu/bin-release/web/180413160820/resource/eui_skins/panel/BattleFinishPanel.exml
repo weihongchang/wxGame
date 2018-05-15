@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BattleFinishPanelSkin" width="400" height="300" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="1626c0be082" ></w:Config>
+	<e:Image width="456" height="334" x="-28" y="-17" source="tipsBg_png" fillMode="scale" scale9Grid="17,13,43,10"/>
+	<e:Label text="战斗胜利" x="100" y="84.33" width="200" textAlign="center" textColor="0xe2e024"/>
+	<e:Button id="closeBtn" label="退出" x="148.5" y="173"/>
+</e:Skin>

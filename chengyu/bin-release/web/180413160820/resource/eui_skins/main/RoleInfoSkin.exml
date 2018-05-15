@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RoleInfoSkin" width="720" height="177" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="720" height="123" x="0" y="1" source="titlebg_png" scale9Grid="80,4,480,26" fillMode="scale"/>
+	<e:Image width="601" height="51" x="119" y="0" source="top_bg_png" fillMode="scale" anchorOffsetX="0"/>
+	<e:Image width="120" height="120" x="0" y="1" source="headicon_png" fillMode="scale" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Image id="imgHead" width="80" height="80" x="20" y="11" source="head_bianshi_png" fillMode="clip"/>
+	<e:Image width="720" height="17" x="0" y="129.5" source="top_cutline_png" fillMode="scale" anchorOffsetY="0" scaleY="-1"/>
+</e:Skin>
