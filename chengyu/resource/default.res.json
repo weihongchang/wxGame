@@ -1,11 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "youximingzi_png,main8_png,xgw20_png",
-			"name": "loading"
-		},
-		{
-			"keys": "template_proto,template,button_up_png,button_down_png,description_json,enemy1-sheet0_png,enemy1-sheet1_png,enemy1-sheet2_png,enemy2-sheet0_png,enemy2-sheet1_png,enemy2-sheet2_png,gameover-sheet0_png,new-sheet0_png,p1-sheet0_png,p1-sheet1_png,p2-sheet0_png,p2-sheet1_png,p3-sheet0_png,p3-sheet1_png,bar1-sheet0_png,bar1-sheet1_png,bar2-sheet0_png,bar2-sheet1_png,module_bg_png,mainBtn_png,xgw20_png,main8_png,youximingzi_png,main1_png,shengyin2_png,shengyin1_png,chaojixiaoguaiwuanniu2_png,pao1_4_png,pao1_1_png,pao1_2_png,pao1_3_png,zhangai1_1_png,xingxing_png,dianju1_png,weixin_png,panel_shop_01_png,fanhuizhuye_png,chongxinkaishi_png,panel_bg_png",
+			"keys": "template_proto,template,button_up_png,button_down_png,description_json,enemy1-sheet0_png,enemy1-sheet1_png,enemy1-sheet2_png,enemy2-sheet0_png,enemy2-sheet1_png,enemy2-sheet2_png,gameover-sheet0_png,new-sheet0_png,p1-sheet0_png,p1-sheet1_png,p2-sheet0_png,p2-sheet1_png,p3-sheet0_png,p3-sheet1_png,bar1-sheet0_png,bar1-sheet1_png,bar2-sheet0_png,bar2-sheet1_png,module_bg_png,mainBtn_png,pao1_4_png,pao1_1_png,pao1_2_png,pao1_3_png,zhangai1_1_png,xingxing_png,dianju1_png,weixin_png,panel_shop_01_png,fanhuizhuye_png,chongxinkaishi_png,panel_bg_png,main1_png,main_png,shengyin1_png,shengyin2_png",
 			"name": "preload"
 		}
 	],
@@ -251,41 +247,6 @@
 			"name": "mainBtn_png"
 		},
 		{
-			"url": "images/loading/xgw20.png",
-			"type": "image",
-			"name": "xgw20_png"
-		},
-		{
-			"url": "images/loading/main8.png",
-			"type": "image",
-			"name": "main8_png"
-		},
-		{
-			"url": "images/loading/youximingzi.png",
-			"type": "image",
-			"name": "youximingzi_png"
-		},
-		{
-			"name": "main1_png",
-			"type": "image",
-			"url": "images/loading/main1.png"
-		},
-		{
-			"name": "shengyin2_png",
-			"type": "image",
-			"url": "images/loading/shengyin2.png"
-		},
-		{
-			"name": "shengyin1_png",
-			"type": "image",
-			"url": "images/loading/shengyin1.png"
-		},
-		{
-			"name": "chaojixiaoguaiwuanniu2_png",
-			"type": "image",
-			"url": "images/loading/chaojixiaoguaiwuanniu2.png"
-		},
-		{
 			"name": "pao1_4_png",
 			"type": "image",
 			"url": "images/fangkuai/pao1_4.png"
@@ -344,6 +305,26 @@
 			"name": "panel_bg_png",
 			"type": "image",
 			"url": "assets/panel_bg.png"
+		},
+		{
+			"name": "main1_png",
+			"type": "image",
+			"url": "images/loading/main1.png"
+		},
+		{
+			"name": "main_png",
+			"type": "image",
+			"url": "images/loading/main.png"
+		},
+		{
+			"name": "shengyin1_png",
+			"type": "image",
+			"url": "images/loading/shengyin1.png"
+		},
+		{
+			"name": "shengyin2_png",
+			"type": "image",
+			"url": "images/loading/shengyin2.png"
 		}
 	]
 }

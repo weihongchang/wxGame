@@ -103,22 +103,22 @@ var Main = (function (_super) {
     };
     Main.prototype.runGame = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var result, userInfo;
+            var userInfo;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0: return [4 /*yield*/, this.loadResource()];
                     case 1:
                         _a.sent();
                         this.createGameScene();
-                        return [4 /*yield*/, RES.getResAsync("description_json")];
-                    case 2:
-                        result = _a.sent();
-                        this.startAnimation(result);
+                        // const result = await RES.getResAsync("description_json")
+                        // this.startAnimation(result);
                         return [4 /*yield*/, platform.login()];
-                    case 3:
+                    case 2:
+                        // const result = await RES.getResAsync("description_json")
+                        // this.startAnimation(result);
                         _a.sent();
                         return [4 /*yield*/, platform.getUserInfo()];
-                    case 4:
+                    case 3:
                         userInfo = _a.sent();
                         console.log(userInfo);
                         return [2 /*return*/];
@@ -177,7 +177,7 @@ var Main = (function (_super) {
      */
     Main.prototype.createGameScene = function () {
         this.imgBG = new egret.Sprite;
-        var sky = this.createBitmapByName("main1_png");
+        var sky = this.createBitmapByName("main_png");
         // let sky = this.createBitmapByName("main1_webp");
         // let bg2 = this.createBitmapByName("bg2_png");
         this.imgBG.addChild(sky);
@@ -186,17 +186,6 @@ var Main = (function (_super) {
         var stageH = this.stage.stageHeight;
         sky.width = stageW;
         sky.height = stageH;
-        // let topMask = new egret.Shape();
-        // topMask.graphics.beginFill(0x000000, 0.5);
-        // topMask.graphics.drawRect(0, 0, stageW, 172);
-        // topMask.graphics.endFill();
-        // topMask.y = 33;
-        // this.imgBG.addChild(topMask);
-        var icon_name = this.createBitmapByName("youximingzi_png");
-        this.imgBG.addChild(icon_name);
-        icon_name.width = icon_name.width * 2;
-        icon_name.x = stageW / 2 - icon_name.width / 2;
-        icon_name.y = icon_name.height * 2;
         var icon = new eui.Image();
         icon.source = "xgw20_png";
         icon.width = 170;
@@ -209,41 +198,6 @@ var Main = (function (_super) {
         this.imgBG.addChild(icon_t);
         icon_t.x = icon.x - icon_t.width;
         icon_t.y = icon.y - icon_t.height / 3;
-        //声音按钮
-        this.iconshengyin = new eui.Image();
-        this.iconshengyin.source = "shengyin1_png";
-        this.iconshengyin.width = 110;
-        this.iconshengyin.height = 110;
-        this.imgBG.addChild(this.iconshengyin);
-        this.iconshengyin.x = this.iconshengyin.width * 1;
-        this.iconshengyin.y = stageH - this.iconshengyin.height * 2;
-        //设置按钮
-        this.iconSet = new eui.Image();
-        this.iconSet.source = "weixin_png";
-        this.iconSet.width = 110;
-        this.iconSet.height = 110;
-        this.imgBG.addChild(this.iconSet);
-        this.iconSet.x = stageW - this.iconSet.width * 2;
-        this.iconSet.y = stageH - this.iconSet.height * 2;
-        // let sharedBtn = new eui.Button();
-        // sharedBtn.y = 35;
-        // sharedBtn.label = 'btnShared';
-        // this.imgBG.addChild(sharedBtn);
-        this.iconSet.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
-            window.platform.shareAppMessage().then(function (res) {
-                console.log('分享成功回调', res);
-            }, function (err) {
-                console.log('分享失败回调', err);
-            });
-        }, this);
-        this.btnClose = new eui.Button();
-        this.btnClose.label = "btnClose!";
-        this.btnClose.y = 35;
-        this.btnClose.horizontalCenter = 0;
-        this.imgBG.addChild(this.btnClose);
-        this.btnClose.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onButtonClickRank, this);
-        this.iconshengyin.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onSoundClick, this);
-        // this.iconSet.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onSoundClick,this);
         icon.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onButtonClick, this);
         GameLayerManager.gameLayer().addChild(this.imgBG);
     };
@@ -258,32 +212,6 @@ var Main = (function (_super) {
         return result;
     };
     /**
-     * 描述文件加载成功，开始播放动画
-     * Description file loading is successful, start to play the animation
-     */
-    Main.prototype.startAnimation = function (result) {
-        var parser = new egret.HtmlTextParser();
-        // let textflowArr = result.map(text => parser.parse(text));
-        // let textfield = this.textfield;
-        // let count = -1;
-        // let change = () => {
-        //     count++;
-        //     if (count >= textflowArr.length) {
-        //         count = 0;
-        //     }
-        //     let textFlow = textflowArr[count];
-        //     // 切换描述内容
-        //     // Switch to described content
-        //     textfield.textFlow = textFlow;
-        //     let tw = egret.Tween.get(textfield);
-        //     tw.to({ "alpha": 1 }, 200);
-        //     tw.wait(2000);
-        //     tw.to({ "alpha": 0 }, 200);
-        //     tw.call(change, this);
-        // };
-        // change();
-    };
-    /**
      * 点击按钮
      * Click the button
      */
@@ -292,25 +220,6 @@ var Main = (function (_super) {
         game.AppFacade.getInstance().sendNotification(SceneNotify.OPEN_HOME);
         game.AppFacade.getInstance().sendNotification(MainNotify.OPEN_MAIN);
         GameLayerManager.gameLayer().removeChild(this.imgBG);
-    };
-    Main.prototype.onSoundClick = function (e) {
-        if (this.isSound) {
-            this.isSound = false;
-            this.iconshengyin.source = "shengyin2_png";
-            // window.platform.setUserCloudData().then(
-            //     (res) => {
-            //     console.log('上传积分成功', res);
-            // }, (err) => {
-            //     console.log('上传积分失败', err);
-            // });
-        }
-        else {
-            this.isSound = true;
-            this.iconshengyin.source = "shengyin1_png";
-            //var kvlist = 
-            window.platform.getUserCloudStorage();
-            //console.log(kvlist);
-        }
     };
     /**
      * 点击按钮
